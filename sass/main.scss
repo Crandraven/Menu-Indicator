@@ -14,44 +14,42 @@ body, .navigation, .navigation ul, .navigation ul li a {
     display: flex;
 }
 
-body {
+.navigation, .navigation ul li, .navigation ul li a, .navigation ul li a .icon {
+    position: relative;
+}
+
+body, .navigation, .navigation ul li a {
     justify-content: center;
     align-items: center;
+}
+
+body {
     min-height: 100vh;
     background: $clr;
 }
 
 .navigation {
-    position: relative;
     width: 400px;
     height: 70px;
     background: #fff;
-    justify-content: center;
-    align-items: center;
     border-radius: 10px;
 
     ul {
-        display: flex;
         width: 350px;
 
         li {
-            position: relative;
             list-style: none;
             width: 70px;
             height: 70px;
             z-index: 1;
 
             a {
-                position: relative;
-                justify-content: center;
-                align-items: center;
                 flex-direction: column;
                 width: 100%;
                 text-align: center;
                 font-weight: 500;
 
                 .icon {
-                    position: relative;
                     display: block;
                     line-height: 75px;
                     font-size: 1.5em;

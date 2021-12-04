@@ -13,40 +13,36 @@ body, .navigation, .navigation ul, .navigation ul li a {
   display: flex;
 }
 
-body {
+.navigation, .navigation ul li, .navigation ul li a, .navigation ul li a .icon {
+  position: relative;
+}
+
+body, .navigation, .navigation ul li a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+body {
   min-height: 100vh;
   background: #222327;
 }
 
 .navigation {
-  position: relative;
   width: 400px;
   height: 70px;
   background: #fff;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border-radius: 10px;
 }
 
 .navigation ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 350px;
 }
 
 .navigation ul li {
-  position: relative;
   list-style: none;
   width: 70px;
   height: 70px;
@@ -54,13 +50,6 @@ body {
 }
 
 .navigation ul li a {
-  position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -71,7 +60,6 @@ body {
 }
 
 .navigation ul li a .icon {
-  position: relative;
   display: block;
   line-height: 75px;
   font-size: 1.5em;
